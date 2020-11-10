@@ -1,0 +1,177 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: url('../img/natural-pattern.png');
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  color: green;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+h1, h2 ,  h3{
+color:lightgrey;
+}
+
+
+
+.container{
+  width: 1000px;
+  margin:20px auto;
+}
+.float-left{
+  float: left;
+}
+
+
+
+
+
+
+.header-top{
+  height: 360px;
+  background-image: url('/Users/mac/Desktop/exercise8/img/natural-header.jpg');
+  border:10px solid white;
+  text-align: center;
+  position: relative;
+}
+
+.header-image-logo {
+  position: absolute;
+  top:50%;
+  left:50%;
+  width:100%;
+  transform: translate(-50%, -50%);
+}
+
+.header-image-logo img {
+   width:50%;
+}
+
+.header-image-logo h2 {
+color: white;
+text-transform: uppercase;
+font-family: 'Montserrat', sans-serif;
+}
+
+nav{
+  background-color: grey;
+  text-align: center;
+}
+nav .menu{
+  list-style: none;
+}
+
+nav .menu li {
+  display: inline-block;
+  /* la height lo lasciamo per sicurezza */
+  height: 44px;
+  line-height: 44px;
+  padding: 0 20px;
+}
+nav .menu li a {
+  color:white;
+
+}
+nav .menu li:hover {
+background-color: lightgrey;
+}
+
+
+main{
+  margin:10px 0;
+
+}
+main::after{
+  content: '';
+  display: table;
+  clear: both;
+
+}
+
+
+.themes{
+  width:20%;
+  /* height: 230px; */
+  background: white;
+  /* da cancellare */
+  padding: 5px;
+  background-color: white;
+  border-radius: 5px;
+
+}
+.themes-ico {
+  width:20%;
+
+}
+
+.themes-ico i {
+  color:orange;
+  font-size: 30px;
+}
+
+.themes-title{
+  width:80%;
+
+}
+ul.themes-menu{
+  list-style: none;
+
+}
+
+ul.themes-menu li{
+  margin:10px;
+
+}
+
+.themes-header::after{
+  content:'';
+  display: table;
+  clear: both;
+}
+
+.articles{
+  width:56%;
+  margin: 0 2%;
+background: white;
+padding: 20px;
+border-radius: 5px;
+}
+
+section.articles p {
+  line-height: 30px;
+}
+.articles h1{
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-shadow: darkgrey;
+}
+
+
+
+.widgets{
+  width:20%;
+
+}
+
+.widget{
+  margin-bottom: 20px;
+  height: 230px;
+  background: white;
+  /* da cancellare */
+}
+
+footer{
+  height: 100px;
+  background: pink;
+  text-align: center;
+  /* da cancellare */
+
+}
